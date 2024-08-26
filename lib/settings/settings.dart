@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class UnirydeAccountPage extends StatelessWidget {
+  const UnirydeAccountPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: null,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
         ),
         title: const Text('Uniryde Account'),
       ),
